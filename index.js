@@ -36,10 +36,10 @@ function findBestEmployee(employees) {
 }
 
 const employees = {
-    Artem: 29,
-    Lera: 35,
-    Max: 13,
-    Vasiliy: 42
+    artem: 29,
+    lera: 35,
+    max: 13,
+    vasiliy: 42
 };
 
 console.log(findBestEmployee(employees));
@@ -55,13 +55,13 @@ function countTotalSalary(employees) {
 }
 
 const salaries = {
-    Artem: 1500,
-    Lera: 2500,
-    Max: 1800,
-    Vasiliy: 2200
+    artem: 1500,
+    lera: 2500,
+    max: 1800,
+    vasiliy: 2200
 };
 
-const { Artem, Lera, Max, Vasiliy } = salaries;
+const { artem, lera, max, vasiliy } = salaries;
 
 console.log(`Загальна сума зарплати: ${countTotalSalary(salaries)}`);
 // Task 5
@@ -78,10 +78,10 @@ function getAllPropValues(arr, prop) {
 }
 
 const products = [
-    { name: 'Radar', price: 30000, quantity: 7 },
-    { name: 'Scanner', price: 10000, quantity: 5 },
-    { name: 'Drone', price: 50000, quantity: 7 },
-    { name: 'Phone', price: 41000, quantity: 9 },
+    { name: 'radar', price: 30000, quantity: 7 },
+    { name: 'scanner', price: 10000, quantity: 5 },
+    { name: 'drone', price: 50000, quantity: 7 },
+    { name: 'phone', price: 41000, quantity: 9 },
 ];
 
 for (const { name: productName, price, quantity } of products) {
@@ -105,10 +105,10 @@ function calculateTotalPrice(allProducts, productName) {
     return totalPrice;
 }
 
-console.log(calculateTotalPrice(products, 'Radar'));
-console.log(calculateTotalPrice(products, 'Scanner'));
-console.log(calculateTotalPrice(products, 'Drone')); 
-console.log(calculateTotalPrice(products, 'Phone')); 
+console.log(calculateTotalPrice(products, 'radar'));
+console.log(calculateTotalPrice(products, 'scanner'));
+console.log(calculateTotalPrice(products, 'drone')); 
+console.log(calculateTotalPrice(products, 'phone')); 
 // Task 7
 const account = {
     balance: 10000,
